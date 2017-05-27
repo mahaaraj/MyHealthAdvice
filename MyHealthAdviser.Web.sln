@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHealthAdviser.Helper", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHealthAdviser.Host", "MyHealthAdviser.Host\MyHealthAdviser.Host.csproj", "{09600BE4-E287-48BB-8A27-874E6C1C671F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHealthAdviser.DataContext", "MyHealthAdviser.DataContext\MyHealthAdviser.DataContext.csproj", "{B25E7D1A-F454-4B0F-BD41-D0C629020023}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{09600BE4-E287-48BB-8A27-874E6C1C671F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09600BE4-E287-48BB-8A27-874E6C1C671F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09600BE4-E287-48BB-8A27-874E6C1C671F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25E7D1A-F454-4B0F-BD41-D0C629020023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25E7D1A-F454-4B0F-BD41-D0C629020023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25E7D1A-F454-4B0F-BD41-D0C629020023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25E7D1A-F454-4B0F-BD41-D0C629020023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

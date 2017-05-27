@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86684481-C874-4684-B163-B30B7F06D8B0}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{09600BE4-E287-48BB-8A27-874E6C1C671F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyHealthAdviser.Dto</RootNamespace>
-    <AssemblyName>MyHealthAdviser.Dto</AssemblyName>
+    <RootNamespace>MyHealthAdviser.Host</RootNamespace>
+    <AssemblyName>MyHealthAdviser.Host</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,7 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,8 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="User.cs" />
+    <Compile Include="AdviserService.cs" />
+    <Compile Include="MyHealthAdviserService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyHealthAdviserService.Designer.cs">
+      <DependentUpon>MyHealthAdviserService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHealthAdviser.BusinessLayer\MyHealthAdviser.BusinessLayer.csproj">
+      <Project>{1f0ada4e-1e0c-4ccd-a2cb-71831ac19644}</Project>
+      <Name>MyHealthAdviser.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Dto\MyHealthAdviser.Dto.csproj">
+      <Project>{86684481-c874-4684-b163-b30b7f06d8b0}</Project>
+      <Name>MyHealthAdviser.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Services\MyHealthAdviser.Contracts.csproj">
+      <Project>{09342052-e5cd-4b9b-8d2f-3dc16c833799}</Project>
+      <Name>MyHealthAdviser.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

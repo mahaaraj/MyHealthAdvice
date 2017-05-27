@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HealthAdviserProcessor.cs" />
     <Compile Include="IHealthAdviserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

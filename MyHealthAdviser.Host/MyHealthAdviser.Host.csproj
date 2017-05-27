@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdviserService.cs" />
+    <Compile Include="HealthAdviserProcessor.cs" />
     <Compile Include="MyHealthAdviserService.cs">
       <SubType>Component</SubType>
     </Compile>

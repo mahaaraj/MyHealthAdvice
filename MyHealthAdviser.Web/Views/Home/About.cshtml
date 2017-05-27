@@ -1,7 +1,25 @@
-﻿@{
+﻿@model List<MyHealthAdviser.Web.Models.HospitalEntity>
+@{
     ViewBag.Title = "About";
+   // Model = ViewBag.ListOfHospital;
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>Hospital Near you area</p>
+
+
+
+<div class="row">
+    <div class="form-group">
+        <div style="overflow-y:scroll; overflow-x:hidden; height:400px;">
+            @foreach (var item in ViewBag.ListOfHospital)
+            {
+                <div class="col-lg-4 col-md-4">
+                    <label>@item.name</label>
+                    
+                </div>
+            }
+        </div>
+    </div>
+</div>

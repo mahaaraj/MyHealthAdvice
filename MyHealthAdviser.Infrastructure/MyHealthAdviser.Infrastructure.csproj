@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="AdviserUnit.cs" />
     <Compile Include="BaseRepository.cs" />
-    <Compile Include="EntityContext.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

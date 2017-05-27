@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace MyHealthAdviser.BusinessLayer
 {
-    public class HealAdvisorProcessor
-    {
-    }
-}
+   
+} 

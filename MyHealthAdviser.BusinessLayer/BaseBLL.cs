@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyHealthAdviser.BusinessLayer
 {
-    public class HealAdvisorProcessor
+    public abstract class BaseBLL : IDisposable
     {
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+        }
     }
 }

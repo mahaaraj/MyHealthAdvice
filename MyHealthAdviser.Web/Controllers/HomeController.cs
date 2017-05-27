@@ -26,5 +26,9 @@ namespace MyHealthAdviser.Web.Controllers
 
             return View();
         }
+        public ActionResult HealthAdvice()
+        {
+            return View();
+        }
     }
 }

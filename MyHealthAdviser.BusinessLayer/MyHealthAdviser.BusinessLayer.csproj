@@ -40,9 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseBLL.cs" />
     <Compile Include="IHealthValidation.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHealthAdviser.DataContext\MyHealthAdviser.DataContext.csproj">
+      <Project>{b25e7d1a-f454-4b0f-bd41-d0c629020023}</Project>
+      <Name>MyHealthAdviser.DataContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Entities\MyHealthAdviser.Entities.csproj">
+      <Project>{f791d0a3-3ede-470d-b37b-e55ad3aa6bb3}</Project>
+      <Name>MyHealthAdviser.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Infrastructure\MyHealthAdviser.Infrastructure.csproj">
+      <Project>{5d6c7191-6e0e-43dd-baf4-de2e6ca27a0b}</Project>
+      <Name>MyHealthAdviser.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Repositories\MyHealthAdviser.Repositories.csproj">
+      <Project>{63c8bb4c-1b48-402f-8238-e8d778235889}</Project>
+      <Name>MyHealthAdviser.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

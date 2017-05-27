@@ -9,10 +9,10 @@ using MyHealthAdviser.DataContext;
 namespace MyHealthAdviser.Repositories
 {
     public sealed class UserStatisticsRepository : BaseRepository<InformationEntity>
-
     {
         public UserStatisticsRepository(IUnitOfWork work) : base(work)
         {
+
         }
     }
 }

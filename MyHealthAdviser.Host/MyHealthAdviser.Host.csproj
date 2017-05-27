@@ -68,6 +68,10 @@
       <Project>{86684481-c874-4684-b163-b30b7f06d8b0}</Project>
       <Name>MyHealthAdviser.Dto</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyHealthAdviser.Entities\MyHealthAdviser.Entities.csproj">
+      <Project>{f791d0a3-3ede-470d-b37b-e55ad3aa6bb3}</Project>
+      <Name>MyHealthAdviser.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyHealthAdviser.Services\MyHealthAdviser.Contracts.csproj">
       <Project>{09342052-e5cd-4b9b-8d2f-3dc16c833799}</Project>
       <Name>MyHealthAdviser.Contracts</Name>

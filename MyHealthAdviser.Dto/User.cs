@@ -25,6 +25,8 @@ namespace MyHealthAdviser.Dto
 
         [DataMember]
         public string email { get; set; }
+        [DataMember]
+        public string Locality { get; set; }
 
     }
 

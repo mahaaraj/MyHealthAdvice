@@ -13,5 +13,6 @@ namespace MyHealthAdviser.Entities
         public double BP { get; set; }
         public double Glucose { get; set; }
 
+        public decimal HeartBeat { get; set; }
     }
 }
